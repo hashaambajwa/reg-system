@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Registration Admin UI (Prototype)
 
-## Getting Started
+A Next.js 15 / React 19 prototype for a registration administration interface. This repository currently contains an MUI permanent sidebar, theme integration and a starter homepage. **It is not a complete registration system**: registration workflows, a backend, authentication and deployment are not implemented here.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js 15 / React 19 / TypeScript
+- Material UI, Materio theme and Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    npm ci
+    npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open http://localhost:3000. The main page is in `app/page.tsx`, the sidebar in `components/Sidebar.tsx` and theme setup in `components/ThemeRegistry.tsx`.
 
-## Learn More
+## Current implementation
 
-To learn more about Next.js, take a look at the following resources:
+- Permanent navigation sidebar with dashboard/settings links
+- Theme and layout scaffolding
+- Default Next.js landing content remains in the dashboard area
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Planned work
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Registration overview, station management and attendee search UI
+- Authenticated API integration
+- Loading/empty/error states and accessible forms
+- Tests and deployment configuration
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This README intentionally describes the current code, not the broader registration architecture being explored elsewhere.
